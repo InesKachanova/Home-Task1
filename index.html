@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/Helvetica-Bold-Font.ttf" />
 
     <title>About Inessa Kachanova</title>
   </head>
   <body>
     <div class="main-div">
-      <div class="footer">
+      <div class="header">
         <div class="footer-about">
           <h1>Let's get acquainted</h1>
-          <a href="#" class="footer-about-link">About me</a>
+          <a href="#about" class="footer-about-link">About me</a>
         </div>
       </div>
 
       <div class="main-information">
         <div>
           <ul class="nav-container">
-            <li class="nav-item">About <span class="nav-line"> | </span></li>
             <li class="nav-item">
-              Experience <span class="nav-line"> | </span>
+              <a href="#about">About</a> <span class="nav-line"> | </span>
             </li>
             <li class="nav-item">
-              Interest's <span class="nav-line"> | </span>
+              <a href="#experience">Experience</a>
+              <span class="nav-line"> | </span>
             </li>
-            <li class="nav-item">Get in touch</li>
+            <li class="nav-item">
+              <a href="#interests">Interests</a>
+              <span class="nav-line"> | </span>
+            </li>
+            <li class="nav-item"><a href="#get-in-touch">Get in touch</a></li>
           </ul>
         </div>
         <div>
           <div>
-            <h2>About</h2>
+            <h2>About<a name="about"></a></h2>
           </div>
 
           <div class="grid-about-container">
@@ -47,36 +50,24 @@
             </div>
             <p class="section-about">Some information about me</p>
             <div class="section-one">
-              <img
-                src="./images/check-mark-icon (1).jpg"
-                class="check-mark-icon"
-              />
-              <h3>My strengths</h3>
+              <h3><span class="check-mark-icon"></span>My strengths</h3>
               <p class="about-overview">Information</p>
             </div>
             <div class="section-two">
-              <img
-                src="./images/check-mark-icon (1).jpg"
-                class="check-mark-icon"
-              />
-              <h3>My goal's</h3>
+              <h3><span class="check-mark-icon"></span>My goals</h3>
               <p class="about-overview">Information</p>
             </div>
             <div class="section-three">
-              <img
-                src="./images/check-mark-icon (1).jpg"
-                class="check-mark-icon"
-              />
-              <h3>My dream's</h3>
+              <h3><span class="check-mark-icon"></span>My dreams</h3>
               <p class="about-overview">Information</p>
             </div>
           </div>
-          <div><h3 class="to-top">To top</h3></div>
+          <div><a href="#about" class="to-top">To top</a></div>
           <hr />
         </div>
 
         <div>
-          <h2>Experience</h2>
+          <h2>Experience<a name="experience"></a></h2>
           <div class="grid-experience-container">
             <div class="experience-blok1">
               <p class="experience">
@@ -85,7 +76,8 @@
               <hr class="small-line" />
               <p class="about-overview">Terms</p>
             </div>
-            <div class="experience-blok2">
+            <div>
+              <div class="experience-blok2"></div>
               <div class="experience-block2-little-blocks">
                 <div class="block2-little-block1">CSS3</div>
                 <div class="block2-little-block2">HTML5</div>
@@ -93,18 +85,19 @@
                 <div class="block2-little-block4">JS</div>
               </div>
             </div>
+
             <div class="experience-blok1">
               <p class="experience">My professional experience in FrontEnd</p>
               <hr class="small-line" />
               <p class="about-overview">Terms</p>
             </div>
           </div>
-          <div><h3 class="to-top">To top</h3></div>
+          <div><a href="#about" class="to-top">To top</a></div>
           <hr />
         </div>
 
         <div>
-          <h2>Interest's</h2>
+          <h2>Interests<a name="interests"></a></h2>
           <div class="flex-container">
             <div>
               <img src="./images/1532b.jpg" class="interest-photo" />
@@ -126,29 +119,61 @@
               <img src="./images/DSC_1726.JPG" class="interest-photo" />
             </div>
           </div>
-          <div><h3 class="to-top">To top</h3></div>
+          <div><a href="#about" class="to-top">To top</a></div>
           <hr />
         </div>
 
         <div>
           <div>
-            <h2>Get In Touch</h2>
-            <p class="in-touch-overview">Some information why</p>
+            <h2>Get In Touch<a name="get-in-touch"></a></h2>
+            <p class="in-touch-overview">We need be in touch</p>
           </div>
-          <form>
-            <input type="text" name="Message" value="Message" />
-            <input type="text" name="Email Address" value="Email Address" />
-            <input type="text" name="Full Name" value="Full Name" />
-            <input type="submit" name="Message" value="Send" />
-          </form>
+          <div>
+            <form class="in-touch-container">
+              <textarea
+                name="Message"
+                placeholder="Message"
+                class="in-touch-message"
+                required="required"
+              ></textarea>
+              <input
+                type="email"
+                name="Email Address"
+                placeholder="Email Address"
+                class="in-touch-address"
+                required="required"
+              />
+              <input
+                type="text"
+                name="Full Name"
+                placeholder="Full Name"
+                class="in-touch-name"
+                required="required"
+              />
+              <input
+                type="submit"
+                name="Message"
+                value="Send"
+                class="in-touch-send"
+              />
+            </form>
+          </div>
           <hr />
 
-          <div>
-            <hr class="small-line" />
-            <p>socialLincs</p>
-            <p>Company name</p>
+          <div class="footer">
+            <hr class="footer-small-line" />
+            <div class="social-lincs">
+              <a href="#" class="inst-linc"> </a>
+              <a href="#" class="tg-linc"> </a>
+              <a href="#" class="fb-linc"> </a>
+            </div>
+            <div>
+              <p class="company-name">
+                <span class="copywrite-icon"></span> My company
+              </p>
+            </div>
           </div>
-          <div><h3 class="to-top">To top</h3></div>
+          <div><a href="#about" class="to-top">To top</a></div>
         </div>
       </div>
     </div>
